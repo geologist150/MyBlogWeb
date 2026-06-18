@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Likome Dafuleni | My Blog</title>
+    <title>Victor Likome Dafuleni | Blog System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,42 +11,32 @@
 
 <header>
     <h1>Victor Likome Dafuleni</h1>
-    <p>My Personal Blog & Learning Journey</p>
-
-    <button id="toggleDark">Toggle Dark Mode 🌙</button>
+    <p>Real Blog System (No Coding Needed to Add Posts)</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Posts</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
 </nav>
 
 <main>
 
-    <div class="post fade-in">
-        <h2>Welcome to My Blog</h2>
-        <p class="date">June 2026</p>
-        <p>This is my personal blog where I share my coding journey and projects.</p>
-    </div>
+    <!-- POST FORM -->
+    <section class="form-box">
+        <h2>Add New Post</h2>
 
-    <div class="post fade-in">
-        <h2>Why I Started Coding</h2>
-        <p class="date">June 2026</p>
-        <p>I started coding to build websites, apps, and solve real-world problems.</p>
-    </div>
+        <input type="text" id="title" placeholder="Post Title">
+        <textarea id="content" placeholder="Write your post..."></textarea>
 
-    <div class="post fade-in">
-        <h2>My Goals</h2>
-        <p class="date">June 2026</p>
-        <p>To become a skilled software developer and build impactful projects.</p>
-    </div>
+        <button onclick="addPost()">Publish Post</button>
+    </section>
+
+    <!-- POSTS WILL APPEAR HERE -->
+    <section id="posts"></section>
 
 </main>
 
 <footer>
-    <p>© 2026 Victor Likome Dafuleni. All rights reserved.</p>
+    <p>© 2026 Victor Likome Dafuleni</p>
 </footer>
 
 <script src="script.js"></script>
